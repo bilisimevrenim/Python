@@ -1,1 +1,0 @@
-bilisimevrenim Instagram hesabında yapılan Python paylaşımlarının kodlarına buradan ulabailirsiniz.
