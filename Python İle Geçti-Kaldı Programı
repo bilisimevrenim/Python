@@ -1,0 +1,5 @@
+ortalama = input('Ortalamanızı Giriniz: ')
+if(int(ortalama)>=5070):
+    print('Geçtiniz.')
+else:
+ print('Kaldınız.')
