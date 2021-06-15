@@ -1,0 +1,42 @@
+print("""**************************
+
+İşlem seçiniz : 
+
+Çıkmak için : q'ya basınız
+
+1 - Para Çekme
+
+2 - Para yatırma
+
+3 - Bakiye sorgulama
+
+**************************
+""")
+
+
+bakiye=1000
+
+while True:
+    islem = input('İslem yapmak istediğiniz sayıyı giriniz: ')
+    if(islem=="q"):
+        print('programdan çıkılıyor.')
+        break
+    elif (islem=='1'):
+        miktar=int(input('Miktar giriniz : '))
+        if(bakiye-miktar<0):
+            print('Yetersiz bakiye.')
+            continue
+        else:
+            bakiye = bakiye - miktar
+
+            print('Hesabınızdan {} Tl para çektiniz.'.format(miktar))
+
+    elif(islem=='2'):
+        yatacak=int(input('yatırmak istediğiniz miktarı giriniz : '))
+        bakiye=bakiye+yatacak
+        print('Hesabınıza {} TL yatırdınız.'.format(yatacak))
+
+    elif(islem=='3'):
+        print('Bakiyeniz {} TL dir.'.format(bakiye))
+    else:
+        print('Geçersiz işlem')
