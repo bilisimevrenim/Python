@@ -1,5 +1,0 @@
-ortalama = input('Ortalamanızı Girin: ')
-if (int(ortalama)) >= 50:
-    print('Sınıfı Geçtiniz.')
-else:
-    print('Sınıfta Kaldınız.')
